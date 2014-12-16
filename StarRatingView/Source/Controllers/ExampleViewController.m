@@ -24,9 +24,9 @@
   ratingView.rateEnabled = YES;
   ratingView.starWidth = 30.0f;
   // set image
-  ratingView.fullImage = @"ic_starwhite.png";
-  ratingView.halfImage = @"ic_starwhitehalf.png";
-  ratingView.emptyImage = @"ic_starwhiteept";
+  ratingView.fullImage = [UIImage imageNamed: @"ic_starwhite.png"];
+  ratingView.halfImage = [UIImage imageNamed:@"ic_starwhitehalf.png"];
+  ratingView.emptyImage = [UIImage imageNamed:@"ic_starwhiteept"];
   
   
   ratingView.rating = 4.0f;

@@ -16,9 +16,12 @@
 @property (nonatomic, assign) CGFloat starWidth;
 @property (nonatomic, assign) BOOL rateEnabled;
 
+@property (nonatomic, strong) UIImage *fullImage;
+@property (nonatomic, strong) UIImage *halfImage;
+@property (nonatomic, strong) UIImage *emptyImage;
+
 // star image
-@property (nonatomic, strong) NSString *fullImage;
-@property (nonatomic, strong) NSString *halfImage;
-@property (nonatomic, strong) NSString *emptyImage;
 @property (nonatomic, assign) CGFloat rating;
+
+
 @end

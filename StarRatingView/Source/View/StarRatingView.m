@@ -12,6 +12,7 @@ static const CGFloat kDefaultStarWidth = 16.0f;
 
 @interface StarRatingView ()
 
+
 @property (nonatomic, strong) NSMutableArray *starButtons;
 
 @end
@@ -43,6 +44,7 @@ static const CGFloat kDefaultStarWidth = 16.0f;
   }
   return self;
 }
+
 
 - (void)setStarWidth:(CGFloat)starWidth
 {
@@ -83,19 +85,19 @@ static const CGFloat kDefaultStarWidth = 16.0f;
   UIImage *starFull, *starHalf, *starEmpty;
 
   if (self.fullImage) {
-    starFull = [UIImage imageNamed:self.fullImage];
+    starFull = self.fullImage;
   } else {
     starFull = [UIImage imageNamed:@"ic_starred.png"];
   }
 
   if (self.halfImage) {
-    starHalf = [UIImage imageNamed:self.halfImage];
+    starHalf = self.halfImage;
   } else {
     starHalf = [UIImage imageNamed:@"ic_starredhalf.png"];
   }
 
   if (self.emptyImage) {
-    starEmpty = [UIImage imageNamed:self.emptyImage];
+    starEmpty = self.emptyImage;
   } else {
     starEmpty = [UIImage imageNamed:@"ic_starredept.png"];
   }
